@@ -1,0 +1,610 @@
+@charset "UTF-8";
+
+/* common PC,スマホ共通デザイン*/
+body {
+    background-color: #000;
+    color: #fff;
+    overflow-y: scroll; /* スクロールバー強制召喚 */
+    font-family: 'Baskervville', serif;
+    font-family: 'Hina Mincho', serif;
+}
+img:not(.top-img),
+img:not(.head-pic) {
+    max-width: 100%;
+}
+#content h2 {
+    font-size: 50px;
+    margin: 50px;
+    text-align: center;
+}
+p {
+    line-height: 2;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+.page-info {
+    width: 70%;
+    margin: auto;
+    line-height: 2;
+}
+footer {
+    background-color: #fff;
+    color: #000;
+    height: 80px;
+}
+footer ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    width: 50%;
+    margin: auto;
+    font-size: 7px;
+}
+footer .cp {
+    margin: auto;
+    font-size: 14px;
+    text-align: center;
+}
+
+
+/* header */
+header {
+    position: fixed;
+    z-index: 98;/* 要素の表示順 */
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    top: 0;
+    font-family: 'Baskervville', serif;
+}
+h1 {
+    font-size: 25px;
+    padding: 10px;
+    margin: auto;
+    margin-left: 20px;
+    text-align: right;
+}
+#sub-h-t {
+    font-family: 'Hina Mincho', serif;
+
+}
+.menu-btn, .menu-btn span {
+    display: none;
+}
+nav ul {
+    display: flex;
+    color: #fff;
+    text-shadow: 0px 0px 3px #000;
+}
+nav ul a:hover {
+    color: #69a290;
+
+}
+nav ul li {
+    margin: 30px 60px 30px 0;
+    font-size: 15px;
+}
+
+
+
+/* index */
+#index {
+    background-image: url(../images/top1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+#wrapper {
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.7) 30%, rgba(0, 0, 0, 0.7));
+}
+.index-top {
+    height: 100vh;
+}
+#index .index-top {
+    padding-top: 45vh;
+    text-align: center;}
+#index h2 {
+    font-size: 80px;
+    font-family: 'Baskervville', serif;
+}
+#sub-t {
+    font-size: 30px;
+    line-height: 2.5;
+    font-family: 'Hina Mincho', serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin: 200px 0px;
+    align-items: center;
+}
+.scroll-up {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(100px);
+    transition: all 1s;
+}
+.scroll-up.is-show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+section.container:nth-of-type(even){
+    flex-flow: row-reverse;
+}/* .containerの中身をevenごとに表示させる */
+.container div img {
+    max-width: 100%;
+    max-height: 450px;
+
+}   
+div .text {
+    width: 40%;
+    padding: 0 50px 0 50px;
+}
+#index h3 {
+    font-size: 35px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.text p {
+    width: 100%;
+    line-height: 2;
+    text-align: justify;
+}
+.user {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    margin:0 5vw 200px;
+}
+.user div {
+    margin: 0 auto;
+    position: relative;
+    width: 250px;
+}
+.user img {
+    width: 250px;
+    margin-bottom: 20px;
+}
+#index h4 {
+    position: absolute;
+    top: 30px;
+    right: -30px;
+    font-size: 25px;
+    background-color: #000;
+}
+.user div p {
+    text-align: justify;
+}
+
+
+
+/* cthulhu page */
+#cthulhu h2 {
+    font-size: 50px;
+    margin: 50px;
+    text-align: center;
+}   
+.lov-cthu {
+    margin: 100px auto;
+}
+.lov-bg {
+    background-image: linear-gradient(90deg, rgba(196, 182, 197, 0.3), rgba(35, 117, 163, 0.3));
+    background-size: 100vw;
+}
+.lov {
+    width: 70%;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+}
+#cthulhu h3 {
+    font-size: 40px;
+    margin: 20px 0;
+}
+.lov img {
+    align-items: center;
+    width: 250px;
+    margin: 30px 0;
+}
+.lov div {
+    padding-left: 50px;
+    max-width: 800px;
+}
+.book {
+    color: #69a290;
+    font-size: large;
+}
+.cthu {
+    margin: 150px auto;
+}
+.cthu-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cthu-h3-text {
+    padding: 0 50px 0 50px;
+    max-width: 800px;
+}
+.cthu-info-text {
+    width: 40vw;
+    margin: 0;
+    line-height: 2;
+    text-align: justify;
+}
+.flexslider {
+    padding: 50px auto;
+    width: 40vw;
+}
+.flex-control-paging li a {
+    background-color: rgba(105, 162, 144, 0.6);
+}
+.flex-control-paging li a.flex-active {
+    background-color: rgba(196, 182, 197, 0.8);
+}
+.cthu-gods {
+    display: flex;
+    justify-content: center;
+    margin: 150px auto;
+    width: 90vw;
+}
+.cthu-gods img {
+    max-height: 600px;
+}
+.cthu-gods h3 {
+    text-align: center;
+}
+.cthu-gods h3 span {
+    font-size: 15px;
+}
+.cthu-gods p {
+    width: 30vw;
+    margin: 0 0 30px 50px;
+    line-height: 2;
+    text-align: justify;
+}
+
+
+
+/* trpg-page */
+.must {
+    margin: 50px 15%;
+}
+.must-list {
+    font-size: 15px;
+    list-style: circle;
+    margin: 50px;
+    line-height: 2;
+}
+.must a {
+    color: #69a290;
+}
+#content h3 {
+    font-size: 40px;
+    margin: 20px 0;
+    line-height: 2;
+}
+.must-items {
+    display: flex;
+    justify-content: center;
+}
+.must-items-b {
+    width: 40%;
+    margin: auto;
+    text-align: center;
+}
+
+
+
+
+
+
+/* contact page */
+.form-bg {
+    margin: 50px auto;
+}
+.form-bg div,
+.form-bg p {
+    text-align: center;
+}
+label {
+    display: inline-block;
+    width: 100px;
+    text-align: right; 
+    margin: 0;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 65%;
+    border: 1px #777 solid;
+    border-radius: 5px;
+    background-color: none;
+    margin: 20px;
+    padding: 10px 20px;
+    text-align: left;
+}
+textarea {
+    padding: 20px 20px;
+    height: 200px;
+    max-width: 65%;
+    min-width: 65%;
+}
+input[type="submit"] {
+    margin: auto auto 50px;
+    border: 1px #fff solid;
+    border-radius: 5px;
+    margin-top: 30px;
+    padding: 15px 50px;
+    background-image: linear-gradient(90deg, rgba(196, 182, 197, 0.3), rgba(35, 117, 163, 0.3));
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 820px) {
+    body {
+        background-color: #000;
+    }
+    #index {
+        background-image: url(../images/top1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center center;
+    }
+    #index .index-top {
+        padding-top: 40vh;
+    }
+    .head-img {
+        width: 100%;
+        overflow: hidden;
+    }
+    .head-img img {
+        width: 250vw; 
+        max-width: 250vw;
+        transform: translateX(-28%);
+    }
+    h1 {
+        font-size: 20px;
+    }
+    .page-info {
+        width: 80%;
+    }
+    p {
+        margin-bottom: 0;
+    }
+
+    footer ul {
+        justify-content: space-evenly;
+        width: 80%;
+    }
+
+    /* hamburger*/
+    .menu-btn, .menu-btn span {
+        display: inline-block;
+        transition: all 0.4s;
+        box-sizing: border-box;
+        z-index: 99;
+    }
+    .menu-btn {
+        display: block;
+        float: right;
+        margin: 25px;
+        position: relative;
+        width: 40px;
+        height: 30px;
+    }
+    .menu-btn span {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        background-color: #fff;
+    }
+    .menu-btn span:nth-of-type(1) {
+        top: 0;
+    }
+    .menu-btn span:nth-of-type(2) {
+        top: 13px;
+    }
+    .menu-btn span:nth-of-type(3) {
+        bottom: 0;
+    }
+    
+
+    /* menu */
+   header {
+        position: fixed;
+        width: 100vw;
+        height: 75px;
+        margin: 0 auto;
+    }
+    .sp-menu {
+        display: none;
+        position: fixed;
+        top: 75px;
+        width: 100vw;
+    }
+    .sp-menu ul {
+        display: block;
+    }
+    .sp-menu li {
+        /* box-sizing: border-box; */
+        margin: 0;
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.8);
+        border-bottom: 1px solid rgba(255,255,255,0.2);
+    }
+    
+    /* index-mein-contents */
+
+    main,.container,section.container:nth-of-type(even) {
+        flex-direction: column;
+    }/* PC用のsection.container:n-o-tの打消し */
+    .container {
+        width:100%;
+        margin: 100px 0;
+        padding: 0;
+    }/* PC版の.containerの打消し */
+    .container div img {
+        max-width: 100%;
+        max-height: 400px;
+    }
+    div .text {
+        width: 80vw;
+        margin: 0 auto;
+        padding: 0;
+        margin-bottom: 2rem;
+    }/* div.textの指定 */
+    
+    .container div:last-child{
+    text-align: center;
+    }/* .containerのブロックの一番最後の要素を真ん中にする */
+
+    .user {
+        display: block;
+    }
+    .user div p {
+        margin-bottom: 50px;
+    }
+
+
+    /* cthulhu */
+    .lov-cthu p {
+        width: 90vw;
+        margin: 0 auto;
+        line-height: 2;
+        margin-bottom: 20px;
+    }   
+    .lov-bg {
+        background-image: linear-gradient(90deg, rgba(196, 182, 197, 0.3), rgba(35, 117, 163, 0.3));
+        height: auto;
+        padding-bottom: 30px;
+    }
+    .lov {
+        width: auto;
+        height: auto;
+        display: block;
+        text-align: center;
+    }
+    .lov div {
+        padding-left: 0;
+    }
+    #cthulhu h3 {
+        width: 90%;
+        font-size: 40px;
+        margin: 30px auto 30px;
+        padding: 0;
+        
+    }
+    .lov img {
+        align-items: center;
+        width: 250px;
+        margin: 30px auto 0;
+    }
+    .lov div p {
+        margin: 0 auto;
+        padding-left: 0;
+        margin-bottom: 30px;
+        text-align: left;
+    }
+    .cthu {
+        width: auto;
+    }
+    .cthu-info {
+        display: block;
+    }
+    .cthu-h3-text {
+        padding: 0;
+    }
+    .cthu-info-text {
+        width: 90vw;
+        margin: auto;
+        padding: 0;
+        margin-bottom: 2rem;
+    }
+    .cthu p {
+        text-align: justify;
+    }
+    .flexslider {
+        width: 90vw;
+        margin: 50px auto;
+    }
+    .flex-control-paging li a {
+        color: #69a290;
+    }
+    .cthu-gods {
+        display: block;
+    }
+    .cthu-gods img {
+        width: auto;
+        height: auto;
+        margin: 0;
+    }
+    .cthu-gods h3 {
+        text-align: center;
+        line-height: 2;
+    }
+    .cthu-gods h3 span {
+        font-size: 15px;
+    }
+
+
+    /* trpg-page */
+.must {
+width: 80%;
+}
+.must-list {
+    font-size: 15px;
+    list-style: circle;
+    margin: auto;
+    line-height: 2;
+}
+#content h3 {
+    font-size: 40px;
+    margin: 50px 0;
+}
+.must-items {
+    display: block;
+    justify-content: center;
+}
+.must-items-b {
+    width: 80%;
+    margin: 30px auto;
+}
+
+
+    /* contact */
+    label {
+        display: inline-block;
+        width: 65%;
+        text-align: left; 
+        margin: 0;
+    }
+    input[type="text"],
+    input[type="email"],
+    textarea {
+    width: 80%;
+    max-width: 80%;
+    min-width: 80%;
+    }
+
+    
+
+}/* max-width:820px */
+
+
